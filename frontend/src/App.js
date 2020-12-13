@@ -5,6 +5,8 @@ import ChatHistory from "./components/ChatHistory"
 import ChatInput from "./components/ChatInput"
 import "./css/App.css"
 
+export const UUID = ((Math.random() + Math.random()) * Math.random()).toString()
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -26,7 +28,8 @@ class App extends Component {
 
   send(event) {
     if(event.keyCode === 13) {
-      sendMsg(event.target.value);
+      let msg = event.target.value
+      sendMsg(`${msg} #${UUID}`);
       event.target.value = "";
     }
   }
