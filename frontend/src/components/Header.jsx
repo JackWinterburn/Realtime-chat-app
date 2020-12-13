@@ -3,7 +3,7 @@ import React from "react"
 
 const Header = () => (
   <div className="header">
-    <h2>Message Room</h2>
+    <h2>RealTime Chat</h2>
   </div>
 );
 
