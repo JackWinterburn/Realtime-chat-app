@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"net/http"
 
 	"github.com/JackWinterburn/Realtime-chat-app/websocket"
@@ -33,7 +34,6 @@ func setupRoutes() {
 }
 
 func main() {
-	fmt.Println("Distributed Chat App v0.01")
 	setupRoutes()
-	http.ListenAndServe(":8080", nil)
+	log.Fatal(http.ListenAndServe(":8080", nil))
 }

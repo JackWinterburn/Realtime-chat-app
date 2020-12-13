@@ -1,0 +1,9 @@
+.App {
+  position: relative;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 10px;
+  box-shadow: 5px 10px 20px #2b2b2b2c;
+  width: 70%;
+  margin: auto;
+}

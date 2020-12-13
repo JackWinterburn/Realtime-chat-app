@@ -3,6 +3,7 @@ import { connect, sendMsg } from "./api/connections";
 import Header from "./components/Header"
 import ChatHistory from "./components/ChatHistory"
 import ChatInput from "./components/ChatInput"
+import "./css/App.css"
 
 class App extends Component {
   constructor(props) {
@@ -30,12 +31,16 @@ class App extends Component {
     }
   }
 
-  render() {
+  render() {    
     return (
       <div className="App">
-        <Header />
-        <ChatHistory chatHistory={this.state.chatHistory}/>
-        <ChatInput send={this.send} />
+        <div>
+          <Header />
+          <ChatHistory chatHistory={this.state.chatHistory}/>
+        </div>
+        <div className="chat-wrapper">
+          <ChatInput send={this.send} />
+        </div>
       </div>
     );
   }

@@ -1,0 +1,18 @@
+.Message {
+  display: block;
+  word-wrap: break-word;
+  background-color: #5680ce;
+  color: white;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  max-width: 50%;
+  float: left;
+  clear: both;
+}
+
+.Message.me {
+  color: white;
+  float: right;
+  background-color: #328ec4;
+}

@@ -1,7 +1,9 @@
 .ChatInput {
+  position: absolute;
   width: 95%;
   display: block;
   margin: auto;
+  bottom: 0;
 }
 
 .ChatInput > input {
@@ -13,4 +15,5 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   width: 98%;
   box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
 }
