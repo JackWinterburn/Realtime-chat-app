@@ -21,7 +21,6 @@ class App extends Component {
       this.setState(prevState => ({
         chatHistory: [...this.state.chatHistory, msg]
       }))
-      console.log(this.state)
     });
 
   }
