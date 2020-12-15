@@ -9,10 +9,12 @@
   max-width: 50%;
   float: left;
   clear: both;
+  transition: 2ms ease-in-out;
 }
 
 .Message.me {
   color: white;
   float: right;
   background-color: #328ec4;
+  transition: 2ms ease-in-out;
 }

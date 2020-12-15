@@ -10,3 +10,10 @@
   margin: 0;
   padding: 0;
 }
+
+@media screen and (max-width: 769px) {
+  .header {
+    width: 100%;
+    border-radius: 0px;
+  }
+}

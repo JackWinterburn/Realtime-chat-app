@@ -9,9 +9,9 @@ class ChatHistory extends Component {
   }
 
   componentDidUpdate() {
-    let el = this.chatRef.current
+    let el = this.chatRef.current;
     if (el.scrollTop + el.offsetHeight + 61 === el.scrollHeight) {
-      el.scrollTop = el.scrollHeight
+      el.scrollTop = el.scrollHeight;
     }
   }
 

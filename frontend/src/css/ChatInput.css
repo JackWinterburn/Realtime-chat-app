@@ -1,12 +1,13 @@
 .ChatInput {
   position: absolute;
-  width: 95.8%;
+  width: 100%;
   display: block;
   margin: auto;
   bottom: 0;
 }
 
-.ChatInput > input {
+.ChatInputEl {
+  z-index: 1;
   padding: 10px;
   margin: 0;
   font-size: 16px;
@@ -16,4 +17,16 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   width: 100%;
   box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
+  transition: 2ms ease;
+}
+
+.ChatInputEl:focus {
+  border: 1px solid rgb(89, 128, 141);
+  outline: none;
+}
+
+@media screen and (max-width: 768px) {
+  .ChatInputEl {
+    border-radius: 0px;
+  }
 }
