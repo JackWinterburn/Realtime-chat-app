@@ -9,6 +9,7 @@ type Pool struct {
 	Broadcast  chan Message
 }
 
+// NewPool spawns a new websocket pool
 func NewPool() *Pool {
 	return &Pool{
 		Register:   make(chan *Client),
